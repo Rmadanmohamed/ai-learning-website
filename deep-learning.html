@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Learning - التعلم العميق</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="section-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>AI Learning</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="machine-learning.html" class="nav-link">Machine Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a href="deep-learning.html" class="nav-link active">Deep Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ai-models.html" class="nav-link">AI Models</a>
+                </li>
+                <li class="nav-item">
+                    <a href="chatbot.html" class="nav-link">المساعد الذكي</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="hero-background">
+            <div class="animated-bg"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">Deep Learning</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">اكتشف قوة الشبكات العصبية العميقة وثورة الذكاء الاصطناعي</p>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">طبقة عصبية</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1B+</span>
+                    <span class="stat-label">معامل</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">إمكانيات</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>ما هو Deep Learning؟</h2>
+                <p>Deep Learning هو جزء من Machine Learning يستخدم الشبكات العصبية العميقة لمحاكاة طريقة عمل الدماغ البشري في معالجة البيانات واتخاذ القرارات.</p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-card" data-aos="fade-right">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>الشبكات العصبية العميقة</h3>
+                    <p>تتكون من طبقات متعددة من العقد المترابطة (neurons) التي تعالج المعلومات بطريقة هرمية. كل طبقة تتعلم ميزات أكثر تعقيداً من الطبقة السابقة، مما يمكن النموذج من فهم الأنماط المعقدة في البيانات.</p>
+                </div>
+                
+                <div class="content-card" data-aos="fade-left">
+                    <div class="card-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>التعلم التلقائي للميزات</h3>
+                    <p>على عكس Machine Learning التقليدي، Deep Learning يتعلم الميزات المهمة تلقائياً من البيانات الخام دون الحاجة لهندسة الميزات اليدوية. هذا يجعله قوياً جداً في التعامل مع البيانات المعقدة مثل الصور والنصوص والصوت.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neural Network Types Section -->
+    <section class="types-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">أنواع الشبكات العصبية العميقة</h2>
+            
+            <div class="types-grid">
+                <!-- CNN -->
+                <div class="type-card supervised" data-aos="zoom-in">
+                    <div class="type-header">
+                        <div class="type-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>Convolutional Neural Networks</h3>
+                        <span class="type-badge">CNN</span>
+                    </div>
+                    
+                    <div class="type-content">
+                        <p>مخصصة لمعالجة البيانات الشبكية مثل الصور. تستخدم طبقات التطبيق (convolution) لاستخراج الميزات المحلية.</p>
+                        
+                        <div class="algorithms">
+                            <h4>المكونات الرئيسية:</h4>
+                            <ul>
+                                <li><strong>Convolutional Layers:</strong> لاستخراج الميزات</li>
+                                <li><strong>Pooling Layers:</strong> لتقليل الأبعاد</li>
+                                <li><strong>Fully Connected Layers:</strong> للتصنيف النهائي</li>
+                                <li><strong>Activation Functions:</strong> ReLU, Sigmoid, Tanh</li>
+                                <li><strong>Dropout:</strong> لمنع Overfitting</li>
+                                <li><strong>Batch Normalization:</strong> لتحسين التدريب</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4>التطبيقات:</h4>
+                            <div class="app-tags">
+                                <span class="tag">تصنيف الصور</span>
+                                <span class="tag">كشف الأشياء</span>
+                                <span class="tag">التعرف على الوجوه</span>
+                                <span class="tag">التصوير الطبي</span>
+                                <span class="tag">القيادة الذاتية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- RNN -->
+                <div class="type-card unsupervised" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="type-header">
+                        <div class="type-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Recurrent Neural Networks</h3>
+                        <span class="type-badge">RNN</span>
+                    </div>
+                    
+                    <div class="type-content">
+                        <p>مناسبة للبيانات التسلسلية. لديها ذاكرة تمكنها من تذكر المعلومات السابقة واستخدامها في التنبؤات.</p>
+                        
+                        <div class="algorithms">
+                            <h4>الأنواع المتقدمة:</h4>
+                            <ul>
+                                <li><strong>LSTM:</strong> Long Short-Term Memory</li>
+                                <li><strong>GRU:</strong> Gated Recurrent Unit</li>
+                                <li><strong>Bidirectional RNN:</strong> معالجة في الاتجاهين</li>
+                                <li><strong>Attention Mechanism:</strong> التركيز على أجزاء مهمة</li>
+                                <li><strong>Seq2Seq:</strong> تسلسل إلى تسلسل</li>
+                                <li><strong>Encoder-Decoder:</strong> ترميز وفك ترميز</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4>التطبيقات:</h4>
+                            <div class="app-tags">
+                                <span class="tag">معالجة اللغة</span>
+                                <span class="tag">الترجمة الآلية</span>
+                                <span class="tag">التعرف على الكلام</span>
+                                <span class="tag">تحليل المشاعر</span>
+                                <span class="tag">التنبؤ بالسلاسل الزمنية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- GAN -->
+                <div class="type-card reinforcement" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="type-header">
+                        <div class="type-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Generative Adversarial Networks</h3>
+                        <span class="type-badge">GAN</span>
+                    </div>
+                    
+                    <div class="type-content">
+                        <p>تتكون من شبكتين تتنافسان: Generator ينتج بيانات مزيفة، وDiscriminator يحاول كشف المزيف من الحقيقي.</p>
+                        
+                        <div class="algorithms">
+                            <h4>الأنواع المتقدمة:</h4>
+                            <ul>
+                                <li><strong>DCGAN:</strong> Deep Convolutional GAN</li>
+                                <li><strong>StyleGAN:</strong> لتوليد صور عالية الجودة</li>
+                                <li><strong>CycleGAN:</strong> لتحويل الصور</li>
+                                <li><strong>Pix2Pix:</strong> ترجمة الصور</li>
+                                <li><strong>BigGAN:</strong> لتوليد صور كبيرة</li>
+                                <li><strong>Progressive GAN:</strong> تدريب تدريجي</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4>التطبيقات:</h4>
+                            <div class="app-tags">
+                                <span class="tag">توليد الصور</span>
+                                <span class="tag">تحسين جودة الصور</span>
+                                <span class="tag">الفن الرقمي</span>
+                                <span class="tag">تحويل الأسلوب</span>
+                                <span class="tag">إنشاء الوجوه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Transformer -->
+                <div class="type-card supervised" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="type-header">
+                        <div class="type-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Transformer Networks</h3>
+                        <span class="type-badge">Transformer</span>
+                    </div>
+                    
+                    <div class="type-content">
+                        <p>ثورة في معالجة اللغة الطبيعية. تستخدم آلية الانتباه (attention) لفهم العلاقات بين الكلمات بشكل أفضل.</p>
+                        
+                        <div class="algorithms">
+                            <h4>المكونات الأساسية:</h4>
+                            <ul>
+                                <li><strong>Self-Attention:</strong> الانتباه الذاتي</li>
+                                <li><strong>Multi-Head Attention:</strong> انتباه متعدد الرؤوس</li>
+                                <li><strong>Positional Encoding:</strong> ترميز المواضع</li>
+                                <li><strong>Feed-Forward Networks:</strong> شبكات التغذية الأمامية</li>
+                                <li><strong>Layer Normalization:</strong> تطبيع الطبقات</li>
+                                <li><strong>Residual Connections:</strong> الاتصالات المتبقية</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4>التطبيقات:</h4>
+                            <div class="app-tags">
+                                <span class="tag">GPT Models</span>
+                                <span class="tag">BERT</span>
+                                <span class="tag">T5</span>
+                                <span class="tag">الترجمة</span>
+                                <span class="tag">الملخصات</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Learning Process -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">عملية Deep Learning</h2>
+            
+            <div class="process-timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>جمع البيانات الضخمة</h3>
+                        <p>Deep Learning يحتاج كميات كبيرة من البيانات للتدريب الفعال. كلما زادت البيانات، كان أداء النموذج أفضل.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>تصميم البنية العصبية</h3>
+                        <p>اختيار نوع الشبكة العصبية المناسب وتحديد عدد الطبقات والعقد في كل طبقة حسب طبيعة المشكلة.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>ضبط المعاملات الفائقة</h3>
+                        <p>تحديد معدل التعلم، حجم الدفعة، عدد العصور، ووظائف التفعيل المناسبة لتحسين أداء النموذج.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>التدريب العميق</h3>
+                        <p>تدريب النموذج على البيانات باستخدام خوارزميات التحسين مثل Adam أو SGD، مع مراقبة الأداء باستمرار.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>التحقق والتقييم</h3>
+                        <p>استخدام بيانات التحقق لمراقبة الأداء ومنع Overfitting، وتقييم النموذج النهائي على بيانات الاختبار.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>النشر والتحسين</h3>
+                        <p>نشر النموذج في الإنتاج مع مراقبة الأداء المستمر وإعادة التدريب عند الحاجة لتحسين النتائج.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frameworks Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">أطر عمل Deep Learning</h2>
+            
+            <div class="tools-grid">
+                <div class="tool-card" data-aos="flip-up">
+                    <div class="tool-logo">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>PyTorch</h3>
+                    <p>إطار عمل مرن وسهل الاستخدام من Facebook للبحث والتطوير</p>
+                    <div class="tool-features">
+                        <span class="feature">Dynamic Graphs</span>
+                        <span class="feature">سهولة التطوير</span>
+                        <span class="feature">مجتمع قوي</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="tool-logo">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>TensorFlow</h3>
+                    <p>إطار عمل شامل من Google للتطوير والإنتاج</p>
+                    <div class="tool-features">
+                        <span class="feature">إنتاج قوي</span>
+                        <span class="feature">TensorBoard</span>
+                        <span class="feature">Mobile Support</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="tool-logo">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Keras</h3>
+                    <p>واجهة عالية المستوى لبناء النماذج بسهولة</p>
+                    <div class="tool-features">
+                        <span class="feature">سهولة الاستخدام</span>
+                        <span class="feature">API بسيط</span>
+                        <span class="feature">تطوير سريع</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="tool-logo">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>CUDA</h3>
+                    <p>منصة الحوسبة المتوازية من NVIDIA لتسريع التدريب</p>
+                    <div class="tool-features">
+                        <span class="feature">GPU Computing</span>
+                        <span class="feature">تسريع عالي</span>
+                        <span class="feature">ذاكرة كبيرة</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card" data-aos="flip-up" data-aos-delay="400">
+                    <div class="tool-logo">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Google Colab</h3>
+                    <p>بيئة تطوير مجانية في السحابة مع GPU</p>
+                    <div class="tool-features">
+                        <span class="feature">مجاني</span>
+                        <span class="feature">GPU/TPU</span>
+                        <span class="feature">Jupyter Notebooks</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card" data-aos="flip-up" data-aos-delay="500">
+                    <div class="tool-logo">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Hugging Face</h3>
+                    <p>مكتبة شاملة لنماذج اللغة الطبيعية المدربة مسبقاً</p>
+                    <div class="tool-features">
+                        <span class="feature">Pre-trained Models</span>
+                        <span class="feature">Transformers</span>
+                        <span class="feature">مجتمع كبير</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="learning-path-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">تطبيقات Deep Learning في الحياة الواقعية</h2>
+            
+            <div class="path-container">
+                <div class="path-step" data-aos="fade-up">
+                    <div class="step-number">🖼️</div>
+                    <div class="step-content">
+                        <h3>الرؤية الحاسوبية</h3>
+                        <p>تطبيقات متقدمة في معالجة وفهم الصور والفيديو</p>
+                        <ul>
+                            <li>التشخيص الطبي من الصور الشعاعية</li>
+                            <li>القيادة الذاتية وكشف الأشياء</li>
+                            <li>التعرف على الوجوه والأمان</li>
+                            <li>مراقبة الجودة في المصانع</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="path-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">💬</div>
+                    <div class="step-content">
+                        <h3>معالجة اللغة الطبيعية</h3>
+                        <p>فهم وإنتاج النصوص بطريقة طبيعية ومتقدمة</p>
+                        <ul>
+                            <li>المساعدين الأذكياء مثل ChatGPT</li>
+                            <li>الترجمة الآلية الفورية</li>
+                            <li>تحليل المشاعر في وسائل التواصل</li>
+                            <li>ملخصات النصوص التلقائية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="path-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">🎵</div>
+                    <div class="step-content">
+                        <h3>معالجة الصوت والكلام</h3>
+                        <p>تحويل الكلام إلى نص والعكس مع فهم المعنى</p>
+                        <ul>
+                            <li>المساعدين الصوتيين مثل Siri و Alexa</li>
+                            <li>تحويل الكلام إلى نص بدقة عالية</li>
+                            <li>توليد الأصوات الطبيعية</li>
+                            <li>تحليل المشاعر من نبرة الصوت</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="path-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">🎮</div>
+                    <div class="step-content">
+                        <h3>الألعاب والترفيه</h3>
+                        <p>إنشاء تجارب تفاعلية ذكية ومحتوى إبداعي</p>
+                        <ul>
+                            <li>ذكاء اصطناعي متقدم في الألعاب</li>
+                            <li>إنتاج المحتوى التلقائي</li>
+                            <li>التأثيرات البصرية المتقدمة</li>
+                            <li>الواقع المعزز والافتراضي</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Learning</h3>
+                    <p>منصتك الشاملة لتعلم الذكاء الاصطناعي وتقنيات Deep Learning</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="machine-learning.html">Machine Learning</a></li>
+                        <li><a href="ai-models.html">AI Models</a></li>
+                        <li><a href="chatbot.html">المساعد الذكي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Learning. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>

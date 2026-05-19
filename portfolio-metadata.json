@@ -1,0 +1,13 @@
+{
+  "repo": "ai-learning-website",
+  "title": "AI Learning Website",
+  "category": "Full-Stack-Web-Projects",
+  "description": "A static educational website covering AI models, machine learning, and deep learning topics.",
+  "topics": [
+    "web",
+    "html",
+    "css",
+    "javascript",
+    "ai-education"
+  ]
+}

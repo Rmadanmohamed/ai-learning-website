@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning - تعلم الآلة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="section-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>AI Learning</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="machine-learning.html" class="nav-link active">Machine Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a href="deep-learning.html" class="nav-link">Deep Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ai-models.html" class="nav-link">AI Models</a>
+                </li>
+                <li class="nav-item">
+                    <a href="chatbot.html" class="nav-link">المساعد الذكي</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="hero-background">
+            <div class="animated-bg"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">Machine Learning</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">تعلم كيف تجعل الآلات تتعلم وتتخذ القرارات الذكية</p>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">أنواع رئيسية</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">خوارزمية</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">إمكانيات</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>ما هو Machine Learning؟</h2>
+                <p>Machine Learning هو فرع من الذكاء الاصطناعي يمكّن الحاسوب من التعلم والتحسن من التجربة دون برمجة صريحة لكل مهمة.</p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-card" data-aos="fade-right">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>التعريف</h3>
+                    <p>Machine Learning هو طريقة لتحليل البيانات التي تؤتمت بناء النماذج التحليلية. إنه فرع من الذكاء الاصطناعي يقوم على فكرة أن الأنظمة يمكنها التعلم من البيانات، وتحديد الأنماط، واتخاذ القرارات بأقل تدخل بشري.</p>
+                </div>
+                
+                <div class="content-card" data-aos="fade-left">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>كيف يعمل؟</h3>
+                    <p>يعمل Machine Learning من خلال تدريب الخوارزميات على مجموعات كبيرة من البيانات. تتعلم هذه الخوارزميات الأنماط والعلاقات في البيانات، ثم تستخدم هذه المعرفة للتنبؤ أو اتخاذ قرارات حول بيانات جديدة لم تراها من قبل.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types Section -->
+    <section class="types-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">أنواع Machine Learning</h2>
+            
+            <div class="types-grid">
+                <!-- Supervised Learning -->
+                <div class="type-card supervised" data-aos="zoom-in">
+                    <div class="type-header">
+                        <div class="type-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Supervised Learning</h3>
+                        <span class="type-badge">التعلم المُشرف عليه</span>
+                    </div>
+                    
+                    <div class="type-content">
+                        <p>يستخدم بيانات مُصنفة مسبقاً لتدريب النموذج على التنبؤ بالنتائج الصحيحة.</p>
+                        
+                        <div class="algorithms">
+                            <h4>الخوارزميات الرئيسية:</h4>
+                            <ul>
+                                <li><strong>Linear Regression:</strong> للتنبؤ بالقيم المستمرة</li>
+                                <li><strong>Logistic Regression:</strong> للتصنيف الثنائي</li>
+                                <li><strong>Decision Trees:</strong> لاتخاذ القرارات المعقدة</li>
+                                <li><strong>Random Forest:</strong> لتحسين دقة التنبؤ</li>
+                                <li><strong>Support Vector Machines:</strong> للتصنيف والانحدار</li>
+                                <li><strong>Neural Networks:</strong> للمشاكل المعقدة</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4>التطبيقات:</h4>
+                            <div class="app-tags">
+                                <span class="tag">تصنيف الإيميلات</span>
+                                <span class="tag">التشخيص الطبي</span>
+                                <span class="tag">التنبؤ بالأسعار</span>
+                                <span class="tag">التعرف على الصور</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Unsupervised Learning -->
+                <div class="type-card unsupervised" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="type-header">
+                        <div class="type-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Unsupervised Learning</h3>
+                        <span class="type-badge">التعلم غير المُشرف عليه</span>
+                    </div>
+                    
+                    <div class="type-content">
+                        <p>يكتشف الأنماط المخفية في البيانات غير المُصنفة دون معرفة النتائج المطلوبة مسبقاً.</p>
+                        
+                        <div class="algorithms">
+                            <h4>الخوارزميات الرئيسية:</h4>
+                            <ul>
+                                <li><strong>K-Means Clustering:</strong> لتجميع البيانات المتشابهة</li>
+                                <li><strong>Hierarchical Clustering:</strong> للتجميع الهرمي</li>
+                                <li><strong>DBSCAN:</strong> لاكتشاف المجموعات الكثيفة</li>
+                                <li><strong>PCA:</strong> لتقليل أبعاد البيانات</li>
+                                <li><strong>Association Rules:</strong> لاكتشاف العلاقات</li>
+                                <li><strong>Anomaly Detection:</strong> لكشف الشذوذ</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4>التطبيقات:</h4>
+                            <div class="app-tags">
+                                <span class="tag">تجميع العملاء</span>
+                                <span class="tag">كشف الاحتيال</span>
+                                <span class="tag">أنظمة التوصية</span>
+                                <span class="tag">تحليل السوق</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reinforcement Learning -->
+                <div class="type-card reinforcement" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="type-header">
+                        <div class="type-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Reinforcement Learning</h3>
+                        <span class="type-badge">التعلم المعزز</span>
+                    </div>
+                    
+                    <div class="type-content">
+                        <p>يتعلم من خلال التفاعل مع البيئة والحصول على مكافآت أو عقوبات بناءً على الأفعال المتخذة.</p>
+                        
+                        <div class="algorithms">
+                            <h4>الخوارزميات الرئيسية:</h4>
+                            <ul>
+                                <li><strong>Q-Learning:</strong> لتعلم القيم المثلى للأفعال</li>
+                                <li><strong>Policy Gradient:</strong> لتحسين السياسات مباشرة</li>
+                                <li><strong>Actor-Critic:</strong> يجمع بين القيمة والسياسة</li>
+                                <li><strong>Deep Q-Networks (DQN):</strong> Q-Learning مع الشبكات العميقة</li>
+                                <li><strong>SARSA:</strong> للتعلم أثناء السياسة</li>
+                                <li><strong>Monte Carlo Methods:</strong> للتعلم من الحلقات الكاملة</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4>التطبيقات:</h4>
+                            <div class="app-tags">
+                                <span class="tag">الألعاب</span>
+                                <span class="tag">الروبوتات</span>
+                                <span class="tag">القيادة الذاتية</span>
+                                <span class="tag">التداول المالي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">عملية Machine Learning</h2>
+            
+            <div class="process-timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>جمع البيانات</h3>
+                        <p>جمع وتنظيم البيانات المطلوبة من مصادر مختلفة. جودة البيانات تحدد جودة النموذج النهائي.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>تنظيف البيانات</h3>
+                        <p>إزالة البيانات المفقودة أو الخاطئة، ومعالجة القيم الشاذة، وتحويل البيانات للشكل المناسب.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>هندسة الميزات</h3>
+                        <p>اختيار وتحويل وإنشاء الميزات المهمة التي ستساعد النموذج على التعلم بشكل أفضل.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>اختيار النموذج</h3>
+                        <p>اختيار الخوارزمية المناسبة بناءً على نوع المشكلة وطبيعة البيانات المتاحة.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>تدريب النموذج</h3>
+                        <p>تدريب النموذج على البيانات وضبط المعاملات للحصول على أفضل أداء ممكن.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>تقييم النموذج</h3>
+                        <p>اختبار أداء النموذج على بيانات جديدة لم يراها من قبل وقياس دقته وفعاليته.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>النشر والتطبيق</h3>
+                        <p>نشر النموذج في بيئة الإنتاج ومراقبة أدائه المستمر وتحديثه عند الحاجة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">أدوات ومكتبات Machine Learning</h2>
+            
+            <div class="tools-grid">
+                <div class="tool-card" data-aos="flip-up">
+                    <div class="tool-logo">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>لغة البرمجة الأكثر شعبية في مجال الذكاء الاصطناعي</p>
+                    <div class="tool-features">
+                        <span class="feature">سهولة التعلم</span>
+                        <span class="feature">مكتبات قوية</span>
+                        <span class="feature">مجتمع كبير</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="tool-logo">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Scikit-learn</h3>
+                    <p>مكتبة شاملة لخوارزميات Machine Learning التقليدية</p>
+                    <div class="tool-features">
+                        <span class="feature">سهولة الاستخدام</span>
+                        <span class="feature">خوارزميات متنوعة</span>
+                        <span class="feature">توثيق ممتاز</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="tool-logo">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <h3>Pandas</h3>
+                    <p>مكتبة لمعالجة وتحليل البيانات بطريقة فعالة</p>
+                    <div class="tool-features">
+                        <span class="feature">معالجة البيانات</span>
+                        <span class="feature">تحليل إحصائي</span>
+                        <span class="feature">تنظيف البيانات</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="tool-logo">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>NumPy</h3>
+                    <p>مكتبة للحوسبة العلمية والعمليات الرياضية</p>
+                    <div class="tool-features">
+                        <span class="feature">مصفوفات متقدمة</span>
+                        <span class="feature">عمليات رياضية</span>
+                        <span class="feature">أداء عالي</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card" data-aos="flip-up" data-aos-delay="400">
+                    <div class="tool-logo">
+                        <i class="fas fa-chart-area"></i>
+                    </div>
+                    <h3>Matplotlib</h3>
+                    <p>مكتبة لإنشاء الرسوم البيانية والتصورات</p>
+                    <div class="tool-features">
+                        <span class="feature">رسوم متنوعة</span>
+                        <span class="feature">تخصيص كامل</span>
+                        <span class="feature">جودة عالية</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card" data-aos="flip-up" data-aos-delay="500">
+                    <div class="tool-logo">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Seaborn</h3>
+                    <p>مكتبة للتصور الإحصائي الجميل والمعلوماتي</p>
+                    <div class="tool-features">
+                        <span class="feature">تصور إحصائي</span>
+                        <span class="feature">تصميم جميل</span>
+                        <span class="feature">سهولة الاستخدام</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Path Section -->
+    <section class="learning-path-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">مسار تعلم Machine Learning</h2>
+            
+            <div class="path-container">
+                <div class="path-step" data-aos="fade-up">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>الأساسيات الرياضية</h3>
+                        <p>تعلم الإحصاء، الجبر الخطي، والتفاضل والتكامل</p>
+                        <ul>
+                            <li>الإحصاء الوصفي والاستنتاجي</li>
+                            <li>المصفوفات والمتجهات</li>
+                            <li>الاحتمالات والتوزيعات</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="path-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>تعلم Python</h3>
+                        <p>إتقان لغة Python والمكتبات الأساسية</p>
+                        <ul>
+                            <li>أساسيات Python</li>
+                            <li>NumPy و Pandas</li>
+                            <li>Matplotlib و Seaborn</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="path-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>خوارزميات ML</h3>
+                        <p>فهم وتطبيق خوارزميات Machine Learning</p>
+                        <ul>
+                            <li>Supervised Learning</li>
+                            <li>Unsupervised Learning</li>
+                            <li>Model Evaluation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="path-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>مشاريع عملية</h3>
+                        <p>تطبيق المعرفة في مشاريع حقيقية</p>
+                        <ul>
+                            <li>تحليل البيانات</li>
+                            <li>بناء النماذج</li>
+                            <li>تقييم الأداء</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Learning</h3>
+                    <p>منصتك الشاملة لتعلم الذكاء الاصطناعي وتقنيات Machine Learning</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="deep-learning.html">Deep Learning</a></li>
+                        <li><a href="ai-models.html">AI Models</a></li>
+                        <li><a href="chatbot.html">المساعد الذكي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Learning. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>
