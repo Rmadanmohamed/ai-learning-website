@@ -35,8 +35,12 @@ function scrollToSection(sectionId) {
 // Add click events to navigation links
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        // Let the browser handle normal page links and cross-page anchors.
+        if (!href || !href.startsWith('#') || href === '#') return;
+        const targetId = href.substring(1);
+        if (!document.getElementById(targetId)) return;
         e.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
         scrollToSection(targetId);
     });
 });
