@@ -1,5 +1,7 @@
 # AI Learning Hub
 
+> **Phase 2 repair branch:** The branch redirects links to the actual chatbot section on `index.html#chatbot` and allows normal page navigation, while preserving smooth scrolling for valid local fragments. Social placeholders remain because their intended destinations are unknown. No visual redesign is included. Full runtime validation is pending; the following historical audit describes the original baseline.
+
 ## Overview and problem statement
 
 An Arabic-first static educational website for learners exploring artificial intelligence, machine learning, deep learning and popular AI model families. The site organizes introductory explanations, learning paths, animations and a browser-based assistant interface without a server-side application.
